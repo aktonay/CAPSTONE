@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 
 # Constants
-IMAGE_SIZE = 224  # Image input size for the model (adjust if needed)
+IMAGE_SIZE = 256  # Image input size for the model (adjust if needed)
 
 # Load the model
 @st.cache_resource
