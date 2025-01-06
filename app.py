@@ -11,7 +11,7 @@ IMAGE_SIZE = 256  # Image input size for the model (adjust if needed)
 @st.cache_resource
 def load_model_file():
     try:
-        model = load_model('densenet201.h5')  # Replace with your model file
+        model = load_model('my_model.h5')  # Replace with your model file
         return model
     except Exception as e:
         st.error(f"Error loading the model: {e}")
