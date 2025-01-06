@@ -5,13 +5,13 @@ import numpy as np
 from PIL import Image
 
 # Constants
-IMAGE_SIZE = 224  # Image input size for the model (adjust if needed)
+IMAGE_SIZE = 256  # Image input size for the model (adjust if needed)
 
 # Load the model
 @st.cache_resource
 def load_model_file():
     try:
-        model = load_model('densenet201.h5')  # Replace with your model file
+        model = load_model('my_model.h5')  # Replace with your model file
         return model
     except Exception as e:
         st.error(f"Error loading the model: {e}")
